@@ -1,0 +1,45 @@
+No.,Name,Type ,Description
+1,sport,integer,Source port number
+2,dsport,integer,Destination port number
+3,dur,Float,Record total duration
+4,sbytes,Integer,Source to destination transaction bytes 
+5,dbytes,Integer,Destination to source transaction bytes
+6,sttl,Integer,Source to destination time to live value 
+7,dttl,Integer,Destination to source time to live value
+8,sloss,Integer,Source packets retransmitted or dropped 
+9,dloss,Integer,Destination packets retransmitted or dropped
+10,Sload,Float,Source bits per second
+11,Dload,Float,Destination bits per second
+12,Spkts,integer,Source to destination packet count 
+13,Dpkts,integer,Destination to source packet count
+14,swin,integer,Source TCP window advertisement value
+15,dwin,integer,Destination TCP window advertisement value
+16,stcpb,integer,Source TCP base sequence number
+17,dtcpb,integer,Destination TCP base sequence number
+18,smeansz,integer,Mean of the ?ow packet size transmitted by the src 
+19,dmeansz,integer,Mean of the ?ow packet size transmitted by the dst 
+20,trans_depth,integer,Represents the pipelined depth into the connection of http request/response transaction
+21,res_bdy_len,integer,Actual uncompressed content size of the data transferred from the server’s http service.
+22,Sjit,Float,Source jitter (mSec)
+23,Djit,Float,Destination jitter (mSec)
+24,Stime,Timestamp,record start time
+25,Ltime,Timestamp,record last time
+26,Sintpkt,Float,Source interpacket arrival time (mSec)
+27,Dintpkt,Float,Destination interpacket arrival time (mSec)
+28,tcprtt,Float,"TCP connection setup round-trip time, the sum of ’synack’ and ’ackdat’."
+29,synack,Float,"TCP connection setup time, the time between the SYN and the SYN_ACK packets."
+30,ackdat,Float,"TCP connection setup time, the time between the SYN_ACK and the ACK packets."
+31,is_sm_ips_ports,Binary,"If source (1) and destination (3)IP addresses equal and port numbers (2)(4)  equal then, this variable takes value 1 else 0"
+32,ct_state_ttl,Integer,No. for each state (6) according to specific range of values for source/destination time to live (10) (11).
+33,ct_flw_http_mthd,Integer,No. of flows that has methods such as Get and Post in http service.
+34,is_ftp_login,Binary,If the ftp session is accessed by user and password then 1 else 0. 
+35,ct_ftp_cmd,integer,No of flows that has a command in ftp session.
+36,ct_srv_src,integer,No. of connections that contain the same service (14) and source address (1) in 100 connections according to the last time (26).
+37,ct_srv_dst,integer,No. of connections that contain the same service (14) and destination address (3) in 100 connections according to the last time (26).
+38,ct_dst_ltm,integer,No. of connections of the same destination address (3) in 100 connections according to the last time (26).
+39,ct_src_ ltm,integer,No. of connections of the same source address (1) in 100 connections according to the last time (26).
+40,ct_src_dport_ltm,integer,No of connections of the same source address (1) and the destination port (4) in 100 connections according to the last time (26).
+41,ct_dst_sport_ltm,integer,No of connections of the same destination address (3) and the source port (2) in 100 connections according to the last time (26).
+42,ct_dst_src_ltm,integer,No of connections of the same source (1) and the destination (3) address in in 100 connections according to the last time (26).
+43,attack_cat,nominal,"The name of each attack category. In this data set , nine categories e.g. Fuzzers, Analysis, Backdoors, DoS Exploits, Generic, Reconnaissance, Shellcode and Worms"
+44,Label,binary,0 for normal and 1 for attack records
